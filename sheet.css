@@ -6,7 +6,7 @@ body {
     font-size: 24px;
     line-height: 1.5em;
     color: black;
-    max-height: 100vh
+    max-height: 100vh;
 }
 h1{
     font-size: 28px;
@@ -15,10 +15,13 @@ h1{
     color: white;
     margin-left: 1%;
 }
+.main{
+    height: 95vh;
+}
 .top{
     display: flex;
     height: 70px;
-    background-color: #3E50B4;
+    background-color: #ff8c00;
 }
 .action_box img{
     height:50px;
@@ -32,8 +35,8 @@ h1{
 }
 .result{
     background-color: white;
-    width:10%;
-    height: 10%;
+    width:8%;
+    height: 8%;
     aspect-ratio: 1/1;
     margin:auto;
     margin-bottom: 1%;
@@ -87,11 +90,14 @@ h1{
 .view_links{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 .set{
     margin:auto;
-    display: flex;
 }
 .set p{
     margin:2%;
+}
+.btn{
+    width: 30%;
 }

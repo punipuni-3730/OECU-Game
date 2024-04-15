@@ -4,7 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="sheet.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/OECU-Game/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/OECU-Game/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/OECU-Game/images/favicon-16x16.png">
+        <link rel="manifest" href="/OECU-Game/images/site.webmanifest">
+        <meta name="theme-color" content="#ff8c00">
     </head>
+    <body>
         <div class="top">
             <!-- 左上にメニューボタンを設置するブツ
                 <div class="action_box">
@@ -12,7 +18,7 @@
                 </div>
             -->
             <div class="title_text">
-                <p>OECU Game!</p>
+                <p>OECU Game 2024</p>
             </div>
         </div>
         <div class="main">
@@ -25,10 +31,10 @@
                   </button> 
                 -->
                 <div class="set" id="btn" style="margin-right: auto; margin-left:auto;">
-                    <div class="result" style="margin: 0;"><a href="javascript:void();" class="chrome"><img src="/OECU-Game/images/chrome.png"></a><div class="date"><p></p></div><div class="title"><br></div></div>
-                    <p>Chromeのアイコンを見つけてください！</p>
+                    <div class="result" style="margin: 0;"><a href="javascript:void();" class="chrome"><img src="/OECU-Game/images/chromecanary.png"></a><div class="date"><p></p></div><div class="title"><br></div></div>
+                    <p>Chromeのアイコンを見つけてください！<br>たまに正解が無いことがあります</p>
                     <!-- <input type="text" id="difficult"> -->
-                    <button onclick="start()">スタート</button>
+                    <button onclick="start()" class="btn">スタート</button>
                 </div>
                 <div id="view_links" class="view_links">
                         <!--難易度に応じて出力-->
@@ -36,5 +42,15 @@
                 </div>
             </div>
         </div>
+        <script>
+            window.addEventListener('load', () => {
+              if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                  .register('sw.js')
+                  .then(registration => console.log('registered', registration))
+                  .catch(error => console.log('error', error));
+              }
+            });
+          </script>
         <script src="script.js"></script>
     </body>
