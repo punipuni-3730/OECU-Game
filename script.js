@@ -7,7 +7,7 @@ function start(){
     for (var i = 1; i <= difficult; i++){
         result.insertAdjacentHTML('beforeend',`<div class="result" id="${i}"><a href="javascript:miss()"><img src="/OECU-Game/images/oecu.png"></a><div class="date"><p></p></div><div class="title"><br></div></div>`);
         }
-    for (var i = 1; i <= 30; i++){
+    for (var i = 1; i <= 40; i++){
     var random = Math.floor(Math.random() * difficult); //0から99
     let change = document.getElementById( random);
     change.innerHTML = "";
@@ -19,6 +19,17 @@ function start(){
     change.innerHTML = "";
     change.insertAdjacentHTML('beforeend',`<a href="javascript:clear()" class="chrome"><img src="/OECU-Game/images/chrome.png"></a><div class="date"><p></p></div><div class="title"><br></div>`);
     startTime = Date.now();
+    var pass;
+    for (var i = 1; i <= difficult; i++){
+        let id = document.getElementById(i);
+        let classname = id.className;
+        if ("chrome" == classname){
+            pass = pass + 1;
+        }
+        if(pass == 0){
+            start();
+        }
+    }
 }
 }
 
