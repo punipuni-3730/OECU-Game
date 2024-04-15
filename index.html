@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <title>OECUゲーム</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="sheet.css">
+    </head>
+        <div class="top">
+            <!-- 左上にメニューボタンを設置するブツ
+                <div class="action_box">
+                    <a href=""><img src="images/action.png" alt="アクションボタン"></a>
+                </div>
+            -->
+            <div class="title_text">
+                <p>OECU Game!</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="text">
+            </div>
+            <div class="content">
+                <!-- json取得ボタン 現在はonloadでページ読み込み時に自動実行
+                    <button type="button" onclick="get()" class="btn btn-info">
+                    取得
+                  </button> 
+                -->
+                <div class="set" id="btn">
+                    <p></p>
+                    <!-- <input type="text" id="difficult"> -->
+                    <button onclick="start()">スタート</button>
+                </div>
+                <div id="view_links" class="view_links">
+                        <!--難易度に応じて出力-->
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
