@@ -17,6 +17,8 @@ h1{
 }
 .main{
     height: 95vh;
+    max-width: 600px;
+    margin: auto;
 }
 .top{
     display: flex;
@@ -102,4 +104,8 @@ h1{
 .btn{
     width: 30%;
     margin-right: auto;
+}
+.header{
+    width: auto;
+    background-color: aqua;
 }
