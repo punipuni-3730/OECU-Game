@@ -16,17 +16,11 @@ function start(){
         startTime = Date.now();
     }
 
-    for (var i = 1; i <= 10; i++){
+    for (var i = 1; i <= 20; i++){
     var random = Math.floor(Math.random() * difficult); //0から99
     let img = document.getElementById('img'+random);
     img.src = '/OECU-Game/images/chromium.png';
     }
-
-    for (var i = 1; i <= 10; i++){
-        var random = Math.floor(Math.random() * difficult); //0から99
-        let img = document.getElementById('img'+random);
-        img.src = '/OECU-Game/images/chromium.png';
-        }
 }
 
 function miss(){
@@ -34,7 +28,7 @@ function miss(){
     location.reload();
 }
 function clear(){
-    clearTime = Date.now() - startTime;
-    alert(clearTime/1000 + '秒でクリア！');
+    clearTime = (Date.now() - startTime)/1000;
+    alert(clearTime+ '秒でクリア！');
     location.reload();
 }

@@ -86,6 +86,7 @@ h1{
 }
 .content{
     margin: 5%;
+    text-align: center;
 }
 .view_links{
     display: flex;
@@ -100,4 +101,5 @@ h1{
 }
 .btn{
     width: 30%;
+    margin-right: auto;
 }
