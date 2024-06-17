@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.izatai",
+      "sha256_cert_fingerprints": ["15:C0:C4:D3:3D:76:60:B9:67:4A:83:82:31:74:C8:84:A1:3C:17:44:71:83:FC:4C:26:BB:29:DA:3B:E9:55:7C"]
+    }
+  }
+]
