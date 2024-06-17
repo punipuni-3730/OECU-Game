@@ -1,0 +1,28 @@
+{
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ff8c00",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "name": "OECUゲーム  - OECUを見つけてタップしましょう",
+  "short_name": "OECUゲーム",
+  "description": "OECUアイコンを見つけてタッチするだけの、シンプルなゲーム。\n非公式です。",
+  "start_url": "https://punipuni-3730.github.io/OECU-Game/",
+  "dir": "ltr",
+  "scope": "https://punipuni-3730.github.io/OECU-Game/",
+  "lang": "ja",
+  "orientation": "any",
+  "categories": [
+    "games"
+  ]
+}
